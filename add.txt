@@ -4,3 +4,4 @@ colorama
 random
 string
 time
+os
