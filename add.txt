@@ -1,0 +1,6 @@
+requests
+threading
+colorama
+random
+string
+time
