@@ -4,6 +4,18 @@ import random
 import string
 import time
 from colorama import Fore, Style
+import os
+
+def fire(text):
+    os.system(""); fade = ""
+    green = 250
+    for line in text.splitlines():
+        fade += (f"\033[38;2;255;{green};0m{line}\033[0m\n")
+        if not green == 0:
+            green -= 25
+            if green < 0:
+                green = 0
+    return fade
 
 # Function to check username availability
 def check_instagram_username(username):
@@ -36,7 +48,17 @@ def process_usernames(usernames, available_usernames):
 
 # Main function
 if __name__ == "__main__":
-    print("by 3nTr: discord: https://discord.com/invite/sYZ96zzUnW")
+    print(fire(f"""
+                             
+                    ██╗███╗░░██╗░██████╗████████╗░█████╗░░█████╗░██╗░░██╗███████╗░█████╗░██╗░░██╗
+                    ██║████╗░██║██╔════╝╚══██╔══╝██╔══██╗██╔══██╗██║░░██║██╔════╝██╔══██╗██║░██╔╝
+                    ██║██╔██╗██║╚█████╗░░░░██║░░░███████║██║░░╚═╝███████║█████╗░░██║░░╚═╝█████═╝░
+                    ██║██║╚████║░╚═══██╗░░░██║░░░██╔══██║██║░░██╗██╔══██║██╔══╝░░██║░░██╗██╔═██╗░
+                    ██║██║░╚███║██████╔╝░░░██║░░░██║░░██║╚█████╔╝██║░░██║███████╗╚█████╔╝██║░╚██╗
+                    ╚═╝╚═╝░░╚══╝╚═════╝░░░░╚═╝░░░╚═╝░░╚═╝░╚════╝░╚═╝░░╚═╝╚══════╝░╚════╝░╚═╝░░╚═╝
+                                             https://discord.com/invite/sYZ96zzUnW
+                                                       Made by 3ntr
+"""))
     # Number of random usernames to generate and check
     num_usernames_to_check = int(input("How Many username do u want: "))
 
