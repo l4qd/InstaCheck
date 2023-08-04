@@ -98,3 +98,4 @@ if __name__ == "__main__":
             file.write(username + "\n")
 
     print("Username checking is complete.")
+    input("Press Enter to exit...")
