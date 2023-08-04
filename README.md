@@ -3,14 +3,15 @@
 
 Here is How its work!
 
-![image](https://media.discordapp.net/attachments/1052797044378570834/1136982609646334102/image.png))
+![image](https://media.discordapp.net/attachments/1052797044378570834/1137045969205207040/image.png?width=762&height=225))
 
 ## Join [Discord](https://discord.gg/v04) for any updates planned
 
 On the lookout to find rare, or unique usernames? This username checker can generate random usernames and check them to see if they are avaliable!
 
 You can use this to find any possible 3 or 4 letter usernames
-
+## Updates
+- Added bat file to run the script very fast
 ## Authors
 
 - [@l4qd](https://github.com/l4qd)
